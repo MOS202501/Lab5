@@ -442,7 +442,7 @@ def graficar_frente_pareto(df, metodo):
                  horizontalalignment='center', verticalalignment='center', fontsize=12)
         plt.title(f"Error: Modelo Infactible - {metodo}")
         plt.axis('off')
-        plt.savefig(f'img/frente_pareto_{metodo}_error.png', dpi=300)
+        plt.savefig(f'img/punto_1/frente_pareto_{metodo}_error.png', dpi=300)
         plt.show()
         return
 
@@ -479,7 +479,7 @@ def graficar_frente_pareto(df, metodo):
     plt.grid(True)
 
     plt.tight_layout()
-    plt.savefig(f'img/frente_pareto_{metodo}.png', dpi=300)
+    plt.savefig(f'img/punto_1/frente_pareto_{metodo}.png', dpi=300)
     plt.show()
 
 
@@ -508,7 +508,7 @@ def analizar_distribucion_recursos(df, indice_solucion):
         plt.title("Solución Simulada - Sin Datos de Distribución Real")
         plt.axis('off')
         plt.savefig(
-            f'img/distribucion_recursos_simulada_{indice_solucion}.png', dpi=300)
+            f'img/punto_1/distribucion_recursos_simulada_{indice_solucion}.png', dpi=300)
         plt.show()
 
         # Resumen textual para solución simulada
@@ -583,7 +583,7 @@ def analizar_distribucion_recursos(df, indice_solucion):
 
         plt.tight_layout()
         plt.savefig(
-            f'img/distribucion_simulada_detalle_{indice_solucion}.png', dpi=300)
+            f'img/punto_1/distribucion_simulada_detalle_{indice_solucion}.png', dpi=300)
         plt.show()
 
         return
@@ -642,7 +642,7 @@ def analizar_distribucion_recursos(df, indice_solucion):
 
     plt.tight_layout()
     plt.savefig(
-        f'img/distribucion_recursos_solucion_{indice_solucion}.png', dpi=300)
+        f'img/punto_1/distribucion_recursos_solucion_{indice_solucion}.png', dpi=300)
     plt.show()
 
     # Resumen textual
@@ -742,7 +742,7 @@ def analisis_sensibilidad(factor_importancia=5, valores_extremos=None):
     plt.title(
         f'Análisis de Sensibilidad - Factor de Importancia {factor_importancia}x')
     plt.grid(True)
-    plt.savefig('img/analisis_sensibilidad.png', dpi=300)
+    plt.savefig('img/punto_1/analisis_sensibilidad.png', dpi=300)
     plt.show()
 
     return resultados_sensibilidad
@@ -813,7 +813,7 @@ def identificar_mejor_solucion_compromiso(df):
     plt.title('Soluciones de Compromiso en el Frente de Pareto')
     plt.legend()
     plt.grid(True)
-    plt.savefig('img/soluciones_compromiso.png', dpi=300)
+    plt.savefig('img/punto_1/soluciones_compromiso.png', dpi=300)
     plt.show()
 
     # Consideramos la solución con menor distancia al punto ideal como la mejor
@@ -838,7 +838,7 @@ def comparar_metodos(df_ec, df_sp):
                  horizontalalignment='center', verticalalignment='center', fontsize=12)
         plt.title("Error: Comparación de Métodos")
         plt.axis('off')
-        plt.savefig('img/comparacion_metodos_error.png', dpi=300)
+        plt.savefig('img/punto_1/comparacion_metodos_error.png', dpi=300)
         plt.show()
         return
 
@@ -852,7 +852,7 @@ def comparar_metodos(df_ec, df_sp):
     plt.title('Comparación de Métodos: ε-constraint vs Suma Ponderada')
     plt.legend()
     plt.grid(True)
-    plt.savefig('img/comparacion_metodos.png', dpi=300)
+    plt.savefig('img/punto_1/comparacion_metodos.png', dpi=300)
     plt.show()
 
     # Análisis de diferencias
